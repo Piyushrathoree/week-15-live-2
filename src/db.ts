@@ -1,6 +1,6 @@
 import mongoose, { Schema, model } from 'mongoose';
 
-const mongoUrl: string = 'mongodb://mongo:27017/myDatabase';
+const mongoUrl: string = 'mongodb://mongo_DB:27017/myDatabase'; // the name mongodb can only be use when the mongo is running into another container and by replacing localhost with mongo, we are telling the app to connect to the mongo container
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl)
